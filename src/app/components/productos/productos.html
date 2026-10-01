@@ -1,1 +1,15 @@
-<p>productos works!</p>
+<section id="productos" class="my-5">
+  <h2 class="mb-3">Productos</h2>
+  <div class="row g-3">
+    @for (p of productos(); track p.id) {
+      <div class="col-6 col-md-3">
+        <div class="card h-100 text-center p-3">
+          <div class="display-4">{{ p.icono }}</div>
+          <h5 class="mt-2">{{ p.nombre }}</h5>
+          <p class="fw-bold">S/ {{ p.precio }}</p>
+          <button class="btn btn-primary">Comprar</button>
+        </div>
+      </div>
+    }
+  </div>
+</section>
