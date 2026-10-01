@@ -1,1 +1,15 @@
-<p>ofertas works!</p>
+<section id="ofertas" class="my-5">
+  <h2 class="mb-3">Ofertas</h2>
+  <div class="row g-3">
+    @for (o of ofertas(); track o.id) {
+      <div class="col-md-4">
+        <div class="card border-danger text-center p-3">
+          <span class="badge bg-danger mb-2">Oferta</span>
+          <div class="display-5">{{ o.icono }}</div>
+          <h5>{{ o.nombre }}</h5>
+          <p class="fw-bold text-danger">S/ {{ o.precio }}</p>
+        </div>
+      </div>
+    }
+  </div>
+</section>
