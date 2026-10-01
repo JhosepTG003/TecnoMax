@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  imports: [],
   selector: 'app-categorias',
-  styleUrl: './categorias.css',
+  imports: [],
   templateUrl: './categorias.html',
+  styleUrl: './categorias.css'
 })
-export class Categorias {}
+export class Categorias {
+  categorias = ['Laptops', 'Celulares', 'Audio', 'Accesorios'];
+}

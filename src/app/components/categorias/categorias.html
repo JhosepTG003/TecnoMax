@@ -1,1 +1,12 @@
-<p>categorias works!</p>
+<section id="categorias" class="my-5">
+  <h2 class="mb-3">Categorías</h2>
+  <div class="row g-3">
+    @for (c of categorias; track c) {
+      <div class="col-6 col-md-3">
+        <div class="card text-center p-3">
+          <h5 class="mb-0">{{ c }}</h5>
+        </div>
+      </div>
+    }
+  </div>
+</section>
